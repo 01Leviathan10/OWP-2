@@ -1,0 +1,47 @@
+
+
+
+.prvideo{
+	width:100%;
+	height:100%;
+	position: absolute;
+	background-image: url("hello.gif");
+	
+}
+.pozadina {
+	position: absolute;
+	width:100%;
+	top:0px;
+	left:0px;
+	background: rgba(58, 42, 58, 0.6);
+}
+body {
+	background-color: rgba(0, 0, 0, 0.9);	
+}
+.naslov {
+  color: #FFFFFF;
+  position: absolute;
+  top:40px;
+  left:10%;
+  padding:9px;
+  font-size:60px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 30px 30px 0 0;
+  font-family: 'Comic Sans MS';
+}
+
+.tekst {
+  color: #FFFFFF;
+  position: absolute;
+  top:190px;
+  left:3%;
+  right:30%;
+  padding:5px;
+  font-size:25px;
+  border-radius: 0 0 30px 30px;
+  background: rgba(0, 0, 0, 0.9);
+  font-family: 'Comic Sans MS';
+}
+
+
+

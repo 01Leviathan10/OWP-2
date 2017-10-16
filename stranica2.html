@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Razvoj računara</title>
+  
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="new 2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- usklađivanje teksta sa širinom stranice -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script src="prikazi_vise.js"></script>
+
+<style>
+#topdugme {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color:#588c7e;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+#topdugme:hover {
+  background-color: #96ceb4;
+</style>
+
+
+</head>
+
+<body>
+
+<button onclick="topFunction()" id="topdugme" title="Go to top">Vrati gore</button>
+<script>
+//Kada korisnik spusti stranicu za 20px pojavice se dugme "Vrati gore"
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("topdugme").style.display = "block";
+    } else {
+        document.getElementById("topdugme").style.display = "none";
+    }
+}
+
+// Kada korisnik pritisne na dugme vratice se na pocetak stranice
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+<a href="hello_world.html" id="hello_world"><i class="fa fa-home" style="font-size:40px;"></i></a>
+
+<div id="mySidenav">
+
+  <a href="pocetna.html" id="poc">Istorijat <i class="fa fa-file" style="font-size:30px; margin-left:103px;"></i></a>
+  <a href="stranica2.html" id="vrlin"> Vremenska linija<i class="fa fa-bank" style="font-size:30px; margin-left:23px;"></i></a>
+  <a href="zanimljivosti.html" id="zan">Zanimljivosti <i class="fa fa-diamond" style="font-size:30px; margin-left:49px;"></i></a>
+  <a href="galerija.html" id="gal">Galerija <i class="fa fa-camera-retro" style="font-size:30px; margin-left:99px;"></i></a>
+  <a href="kontakt.html" id="kon">Kontakt <i class="fa fa-envelope" style="font-size:30px; margin-left:97px;"></i></a>
+</div>
+  
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+	<script src="stranica2.js"></script>
+  
+  
+    <header>
+
+      <h1 class="str2">Razvoj računara</h1>
+   
+  </header>
+  
+  
+  
+  
+  <section class="vremenskalinija">
+  
+    
+	
+      <div class="vremenskalinija-dogadjaj">
+			
+			<div class="vremenskalinija-sadrzaj vremenskalinija-kartica js--fadeInLeft">
+				<div class="vremenskalinija-img-header">
+					<img src="http://mathe-abakus.fraedrich.de/abakus/abakuspics/abasien/abasien25_1.jpg" alt="Abakus" class="vremenskalinija-img-header" Style="  border-radius: 8px;">
+					<h2>Abakus</h2>
+				</div>
+				<div class="date">3000 godine p.n.e.</div>
+					<p class="drugastranica">Korišćen je u Grčkoj, Egiptu, koristili su ga Asteci a koristio se čak i u modernom dobu, naročito i Kini, Rusiji i SAD.</p>
+				<div>
+					<p class="drugastranica" id="dodatniTekst1"><!-- ovde će biti dodatni tekst--></p>
+				</div>
+				<a class="prikazi" id="dugmeJosTeksta1" onclick="josTeksta1();" href="javascript:void(0);">Prikaži više</a>
+
+			</div> 
+      </div>
+	  
+       <div class="vremenskalinija-dogadjaj">
+			<div class="vremenskalinija-sadrzaj vremenskalinija-kartica js--fadeInRight">
+				<div class="vremenskalinija-img-header">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/050114_2529_difference.jpg" Style="  border-radius: 8px;" alt="Elektromehanicki racunar" class="vremenskalinija-img-header">
+					<h2>Mehanički kalkulator</h2>
+				</div>
+				<div class="date">1652.</div>
+				<p class="drugastranica">Ocem prve računske mašine koja je mogla da sabira i oduzima unete brojeve smatra se Blez Paskal (Blaise Pascal). Ova mašina je dobila ime Paskalina.
+ </p>
+				<div>
+					<p class="drugastranica" id="dodatniTekstA"><!-- ovde će biti dodatni tekst--></p>
+				</div>
+				<a class="prikazi" id="dugmeJosTekstaA" onclick="josTekstaA();" href="javascript:void(0);">Prikaži više</a>
+			</div>
+		</div>    
+      
+      <div class="vremenskalinija-dogadjaj">
+			<div class="vremenskalinija-sadrzaj vremenskalinija-kartica js--fadeInLeft">
+				<div class="vremenskalinija-img-header">
+					<img src="elektromehanicki.jpg" alt="Elektromehanicki racunar" Style=" border-radius: 8px;" class="vremenskalinija-img-header">
+					<h2>Електромеханички рачунари</h2>
+				</div>
+				<div class="date">1925.</div>
+					<p class="drugastranica">Imao električni motor, ovaj računar je u suštini bio mehanička mašina. Model je kompletiran 1942. i korišćen je prvenstveno za rešavanje parcijalnih diferencijalnih jednačina u vojne svrhe.  </p>
+				<div>
+					<p class="drugastranica" id="dodatniTekst3"> <!-- ovde će biti dodatni tekst--> </p>
+				</div>
+				<a class="prikazi" id="dugmeJosTeksta3" onclick="josTeksta3();" href="javascript:void(0);">Prikaži više</a>
+
+			</div>
+		</div>    
+      
+      <div class="vremenskalinija-dogadjaj">
+			<div class="vremenskalinija-sadrzaj vremenskalinija-kartica js--fadeInRight">
+				<div class="vremenskalinija-img-header">
+					<img src="prvi.jpg" alt="Eniac" class="vremenskalinija-img-header" Style="  border-radius: 8px;">
+					<h2>ENIAC</h2>
+				</div>
+				<div class="date">1945.</div>
+					<p class="drugastranica">Za vreme Drugog svetskog rata ukazala se potreba za izradom balističkih tablica za nove vrste artiljerijskih oružja. Godine 1942. je angažovan tim sa Univerziteta Pensilvanija (Prosper J. Eckert, John W. Mauchley i John Brainerd) da napravi računar za automatsko izračunavanje balističkih podataka. Projekat je nazvan ENIAC . </p>
+				<div>
+					<p class="drugastranica" id="dodatniTekst4"><!-- ovde će biti dodatni tekst--></p>
+				</div>
+				<a class="prikazi" id="dugmeJosTeksta4" onclick="josTeksta4();" href="javascript:void(0);">Prikaži više</a>
+			</div>
+		</div>    
+      
+      <div class="vremenskalinija-dogadjaj">
+			<div class="vremenskalinija-sadrzaj vremenskalinija-kartica js--fadeInLeft">
+				<div class="vremenskalinija-img-header">
+					<img src="vakumska_cev.gif" Style="  border-radius: 8px;" alt="Vakumska Cev" class="vremenskalinija-img-header">
+					<h2>Prva Generacija</h2>
+				</div>
+				<div class="date">1951.</div>
+				<p class="drugastranica">Karakterišu korišćenje elektronskih (vakumskih) cevi kao aktivnih elemenata i kablovskih veza između elemenata.  </p>
+				<div>
+					<p class="drugastranica" id="dodatniTekst5"><!-- ovde će biti dodatni tekst--></p>
+				</div>
+				<a class="prikazi" id="dugmeJosTeksta5" onclick="josTeksta5();" href="javascript:void(0);">Prikaži više</a>
+
+			</div>
+		</div>    
+
+      <div class="vremenskalinija-dogadjaj">
+			<div class="vremenskalinija-sadrzaj vremenskalinija-kartica js--fadeInRight">
+				<div class="vremenskalinija-img-header">
+					<img src="uni.jpg" alt="Tranzistor" Style="  border-radius: 8px;" class="vremenskalinija-img-header">
+					<h2>Druga generacija</h2>
+				</div>
+				<div class="date">1948-1959</div>
+				<p class="drugastranica">Druga generacija obuhvata računare proizvedene krajem pedesetih i u prvoj polovini šezdesetih godina. Ova generacija zasnovana je na tranzistorima.
+ </p>
+				<div>
+					<p class="drugastranica" id="dodatniTekst6"><!-- ovde će biti dodatni tekst--></p>
+				</div>
+				<a class="prikazi" id="dugmeJosTeksta6" onclick="josTeksta6();" href="javascript:void(0);">Prikaži više</a>
+			</div>
+		</div>   
+      
+      <div class="vremenskalinija-dogadjaj">
+			<div class="vremenskalinija-sadrzaj vremenskalinija-kartica js--fadeInLeft">
+				<div class="vremenskalinija-img-header">
+					<img src="integrisano_kolo.jpg" alt="Kola" Style="  border-radius: 8px;" class="vremenskalinija-img-header">
+					<h2>Treća generacija</h2>
+				</div>
+				<div class="date">1961.</div>
+					<p class="drugastranica">Glavno tehnološko unapređenje računara treće generacije bila je primena integrisanih kola. </p>
+				<div>
+					<p class="drugastranica" id="dodatniTekst7"><!-- ovde će biti dodatni tekst--></p>
+				</div>
+				<a class="prikazi" id="dugmeJosTeksta7" onclick="josTeksta7();" href="javascript:void(0);">Prikaži više</a>
+
+			</div>
+		</div>   
+
+      <div class="vremenskalinija-dogadjaj">
+			<div class="vremenskalinija-sadrzaj vremenskalinija-kartica js--fadeInRight">
+				<div class="vremenskalinija-img-header">
+					<img src="chip.gif" alt="Čip" Style="  border-radius: 8px;" class="vremenskalinija-img-header">
+					<h2>Četvrta generacija</h2>
+				</div>
+				<div class="date"></div>
+				<p class="drugastranica">Četvrtu generaciju karakterišu komponente izrađene na bazi poluprovodničkih sklopova korišćenjem LSI (Large Scale Integrated) i VLSI (Verry Large Scale Integration) visoko integrisanih sklopova koja omogućava stvaranje mikroprocesora koji predstavlja osnovu današnjih računara.  </p>
+				<div>
+					<p class="drugastranica" id="dodatniTekst8"><!-- ovde će biti dodatni tekst--></p>
+				</div>
+				<a class="prikazi" id="dugmeJosTeksta8" onclick="josTeksta8();" href="javascript:void(0);">Prikaži više</a>
+			</div>
+		</div>  
+      
+      <div class="vremenskalinija-dogadjaj">
+			<div class="vremenskalinija-sadrzaj vremenskalinija-kartica js--fadeInLeft">
+				<div class="vremenskalinija-img-header">
+					<img src="robot.jpeg" alt="Robot" Style="  border-radius: 8px;" class="vremenskalinija-img-header">
+					<h2>Peta generacija računara</h2>
+				</div>
+				<div class="date"></div>
+					<p class="drugastranica">Oko prve tri generacije računara nije bilo neslaganja. Posle treće generacije bilo je mnogo poboljšanja, ali ne tako fundamentalnih kao što su razlike između elektronskih cevi, tranzistora i integrisanih kola.
+Naše stanovište je da su računari četvrte generacije zasnovani na upotrebi mikroprocesora.
+ </p>
+				<div>
+					<p class="drugastranica" id="dodatniTekst9"><!-- ovde će biti dodatni tekst--></p>
+				</div>
+				<a class="prikazi" id="dugmeJosTeksta9" onclick="josTeksta9();" href="javascript:void(0);">Prikaži više</a>
+
+			</div>
+		</div>
+
+		<div class="vremenskalinija-dogadjaj">
+			<div class="vremenskalinija-sadrzaj vremenskalinija-kartica js--fadeInRight">
+				<div class="vremenskalinija-img-header">
+						<img src="superracunar.jpeg" Style="  border-radius: 8px;" alt="Superračunar" class="vremenskalinija-img-header">
+						<h2>Superračunar</h2>
+				</div>
+				<div class="date"></div>
+				<p class="drugastranica">Superračunar je veoma moćan računar velikog kapaciteta, sposoban da obrađuje veliku količinu podataka u veoma kratkom vremenu. Ovakvim računarima obično se smatraju računari velikih mogućnosti i brzine obrade, čija konstrukcija nije zasnovana na fon Nojmanovoj arhitekturi nego na paralelizaciji računarskog procesa.
+ </p>
+				<div>
+					<p class="drugastranica" id="dodatniTekst10"><!-- ovde će biti dodatni tekst--></p>
+				</div>
+				<a class="prikazi" id="dugmeJosTeksta10" onclick="josTeksta10();" href="javascript:void(0);">Prikaži više</a>
+			</div>
+		</div>
+
+
+		</div>		
+  </section>
+  
+<footer>
+	<marquee behavier= "scroll" direction= "left"> 6.grupa - Marko Milićević 348/13, Jovana Pavlović 374/15, Anja Rodić 440/15, Dušan Marjanov 278/15, Nevena Petrov 388/15</marquee>
+</footer>
+  
+	
+	
+	
+
+</body>
+</html>

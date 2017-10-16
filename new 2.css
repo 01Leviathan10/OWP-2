@@ -1,0 +1,286 @@
+﻿#hello_world {
+    top: 4px;
+	left: 4px;
+    background-color: #e06377;
+	padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+	position: fixed;
+}
+
+
+
+
+#mySidenav a {
+    position: fixed;
+    left: -175px;
+	margin-top:30px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 210px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#poc {
+	top: 105px;
+    background-color: #588c7e;
+}
+#vrlin {
+    top: 172px;
+    background-color: #f2e394;
+}
+
+#zan {
+    top: 240px;
+    background-color:  #f2ae72;
+}
+
+#gal {
+    top: 310px;
+    background-color:  #e06377;
+}
+
+#kon {
+    top: 380px;
+    background-color:  #ff6f69;
+}
+
+
+
+
+.pocetna {
+	text-align:justify; 
+	font-family:'Comic Sans MS';
+	margin-left:275px;
+	margin-right: 150px;
+	font-size : 20px;
+}
+
+body {
+	background-image: url("novapozadina.jpg");
+}
+
+
+
+
+
+section {
+	margin-top:20px;
+    margin-left: 20%;
+    margin-right:7%;
+}
+
+
+
+html, body {
+  overflow-x: hidden;
+}
+
+.drugastranica {
+	font-family:'Comic Sans MS';
+	padding: 10px;
+}
+h1.str2 {
+  font-size: 40px;
+  font-family: 'Comic Sans MS';
+   letter-spacing: 3px;
+  
+}
+
+header {
+  background: #96ceb4;
+  color: #FFFFFF;
+  padding: 0.1px;
+  border-radius: 20px;
+  margin-left: 270px;
+  margin-top: 1px;
+  margin-right:25px;
+  text-align:center;
+  font-family: 'Comic Sans MS';
+  width:73%;
+}
+
+.vremenskalinija {
+  position: relative;
+}
+
+
+/*podešavanje same linije koja će služiti kao vremenska osa*/
+.vremenskalinija::before {
+  content: '';
+  background: #C5CAE9;
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*definisanje svakog  vremensog dogadjaja u vremenskoj liniji*/
+.vremenskalinija-dogadjaj {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*definisanje parnih dogadjaja u vremenskoj liniji, kako bi bili sa desne strane*/
+.vremenskalinija-dogadjaj:nth-child(even) .vremenskalinija-sadrzaj {
+  float: right;
+  padding: 20px 30px 10px 30px;
+}
+
+/*postavljanje datuma na parnim karticama vremenske linije*/
+.vremenskalinija-dogadjaj:nth-child(even) .vremenskalinija-sadrzaj .date {
+  right: auto;
+  left: 0;
+  /*nema razmaka levo*/
+}
+
+/*podešavanje izgleda "strelice" parnih kartica nakon pojavljivanja događaja*/
+.vremenskalinija-dogadjaj:nth-child(even) .vremenskalinija-sadrzaj::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: -20px;
+  border-width: 15px 20px 15px 0;
+  border-color: transparent white transparent transparent;
+}
+/*podešavamo da pojavljivanje kartica, da ne dođe do preklapanja*/
+.vremenskalinija-dogadjaj::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.vremenskalinija-sadrzaj {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  box-shadow: 0 20px 25px -15px gray;
+}
+
+/*definisanje strelice na neparnim karticama*/
+.vremenskalinija-sadrzaj::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -20px;
+  border-width: 15px 0 15px 20px;
+  border-color: transparent transparent transparent white;
+}
+
+
+a.prikazi
+{
+  background: #FF4081;
+  color: #FFFFFF;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
+  text-decoration:none; 
+}
+
+a.prikazi:hover
+{
+  background: #3F51B5;
+  color: #FFFFFF;
+  text-decoration: none; 
+}
+/* su slučaju preklapanja, padding će biti 0, zbog !bitno*/
+.vremenskalinija-kartica {
+  padding: 0 !important;
+}
+p.vremenskalinija-kartica {
+  padding: 0 20px;
+}
+a.vremenskalinija-kartica {
+  margin-left: 20px;
+}
+
+/*definišemo header za svaki blok-dogadjaj, i za svaku sliku koju ćemo u 
+taj blok ubaciti*/
+.vremenskalinija-img-header {
+  height: 200px;
+  width:100%;
+  position: relative;
+  margin-bottom: 20px;
+  
+}
+
+.vremenskalinija-img-header h2 {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 1px;
+  left: 20px;
+  font-weight: 2400;
+  background: rgba(58, 42, 58, 0.6);;
+  
+  
+}
+
+
+
+/*datumi koji se nalaze u timeline*/
+.date {
+  background: #FF4081;
+  display: inline-block;
+  color: #FFFFFF;
+  border-radius:5px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+/*u slučaju smanjivanja prozora ispod 768px*/
+@media screen and (max-width: 768px) {
+  .vremenskalinija::before {
+    left: 90px;   /*leva margina*/
+  }
+  .vremenskalinija .vremenskalinija-sadrzaj {
+    max-width: 90%;  /*širina neće biti više od 90%, i automatski će se usklađivati sa velićinom stranice*/
+    width: auto;
+    margin-left: 70px;
+  }
+
+  .vremenskalinija .vremenskalinija-dogadjaj:nth-child(odd) .vremenskalinija-sadrzaj::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+}
+.footer {
+  padding: 1px;
+  margin-bottom: 1px;
+  text-align:center;
+  font-family: 'Comic Sans MS';
+  }
+ 

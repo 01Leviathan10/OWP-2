@@ -1,0 +1,170 @@
+#hello_world {
+    top: 4px;
+	left: 4px;
+    background-color: #e06377;
+	padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+	position: fixed;
+}
+
+
+
+
+#mySidenav a {
+    position: fixed;
+    left: -175px;
+	margin-top:30px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 210px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#poc {
+	top: 105px;
+    background-color: #588c7e;
+}
+#vrlin {
+    top: 172px;
+    background-color:  #f2e394;
+}
+
+#zan {
+    top: 240px;
+    background-color:  #f2ae72;
+}
+
+#gal {
+    top: 310px;
+    background-color:  #e06377;
+}
+
+#kon {
+    top: 380px;
+    background-color:  #ff6f69;
+}
+
+/*
+essential styles:
+these make the slideshow work
+*/
+#slajdovi{
+    position: relative;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slika{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.sada_se_prikazuje{
+    opacity: 1;
+    z-index: 2;
+}
+
+
+.controls{
+    display: none;
+}
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slika{
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+	background-size: cover;
+
+}
+
+/* http://unrestrictedstock.com/wp-content/uploads/snowy-winter-vignette-bokeh-night-snow-falling-free-stock-photo.jpg */
+.slika:nth-of-type(1) {
+    background: url(slika1.jpg);
+}
+
+/* http://www.dawghousedesignstudio.com/wp-content/uploads/2010/01/25/free-stock-photos-1.jpg */
+.slika:nth-of-type(2) {
+    background: url(slika2.jpg);
+}
+
+/* http://www.stockfreeimages.com/static/homepage/waterfall-free-stock-photo-244915.jpg */
+.slika:nth-of-type(3) {
+    background: url(slika3.jpg);
+}
+
+.slika:nth-of-type(4) {
+    background: url(slika4.jpg);
+}
+.slika:nth-of-type(5) {
+    background: url(slika5.jpg);
+}
+
+
+.kontrolni_dugmici{
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  margin: 420px 0 0px 7px;
+  width: 55px;
+}
+
+.kontrolni_dugmici:hover{
+  background: #eee;
+  color: #333;
+}
+
+.galerija{
+  position: relative;
+  width:610px;
+  height:100%;
+  margin-left:30%;
+  margin-right:5%;
+  margin-top:70px;
+}  
+body {
+	background-image: url("novapozadina.jpg");
+}
+
+
+.dugmici{
+  position: absolute;
+  left: 200px;
+  top: 0px;
+  z-index: 10;
+  font-size: 0px;
+}
